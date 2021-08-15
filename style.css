@@ -8,6 +8,10 @@
     color: #00172b;
     text-decoration: none !important;
 }
+dl,ol,ul{
+    padding: 0 !important;
+    margin: 0 !important; 
+}
 
 section{
     width: 100%;
@@ -242,7 +246,7 @@ nav ul li a:hover{
     cursor: pointer;
     transition: 0.4s;
     backdrop-filter: blur(5px);
-    z-index: 900 !important;
+    z-index: 500;
 }
 
 
