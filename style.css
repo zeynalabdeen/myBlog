@@ -242,6 +242,7 @@ nav ul li a:hover{
     cursor: pointer;
     transition: 0.4s;
     backdrop-filter: blur(5px);
+    z-index: 900 !important;
 }
 
 
@@ -251,7 +252,6 @@ nav ul li a:hover{
 .Card:hover{
     height: 380px !important;
     border-radius: 8px;
-    z-index: 900;
     border: 1px solid rgba(255, 255, 255, 0.623);
 }
 
