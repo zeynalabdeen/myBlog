@@ -4,12 +4,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.background = "#ffffff67";
-    document.getElementById("navbar").style.backdropFilter = "blur(5px)";
+    document.getElementById("navbar").style.background = "#fff";
     document.getElementById("navbar").style.boxShadow = "2px 1px 1px 0 rgba(0, 0, 0, 0.301)";
     document.getElementById("whatsapp").style.display = "flex";
   } else {
-    document.getElementById("navbar").style.backdropFilter = "none";
     document.getElementById("navbar").style.background = "0";
     document.getElementById("navbar").style.boxShadow = "none";
     document.getElementById("whatsapp").style.display = "none";
