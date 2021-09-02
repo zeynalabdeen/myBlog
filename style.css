@@ -241,7 +241,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
-#portfolio .col-md-6{
+#portfolio .col-md-4{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -250,12 +250,18 @@ nav ul li a:hover{
 #portfolio .Card{
     background: linear-gradient(135deg, #11bcffc2, #00299933);
     height: 140px;
-    width: 17em;
+    width: 16em;
     overflow: hidden;
     box-shadow: 1px 5px 8px 1px rgba(0, 0, 0, 0.226);
     cursor: pointer;
     transition: 0.4s;
     backdrop-filter: blur(5px);
+}
+#portfolio .col-md-4:last-child .Card .myBtn{
+    background: linear-gradient(to right, #ef3656, #ef365571);
+}
+#portfolio .col-md-4:last-child .Card{
+    background: linear-gradient(135deg, #f26472, #ef365571);
 }
 
 
@@ -278,10 +284,10 @@ nav ul li a:hover{
     color: #fff !important;
 }
 .Card .card-body h4{
-    font-size: 20px;
+    font-size: 18px;
 }
 .Card .card-body p{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #portfolio .Card img{
@@ -296,6 +302,7 @@ nav ul li a:hover{
     opacity: 1;
     position: relative;
     bottom: 0px;
+    font-size: 13px ;
 }
 
 /* contact SECTİON */
