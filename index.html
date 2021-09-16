@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -51,7 +52,8 @@
 
                         <p>Veb saytınız virtual dünyada sizin kimliyinizdir . . .</p>
 
-                        <a href="assets/Qedirov_Zeynalabdin.pdf" target="_blank"><button class="myBtn">Download CV</button></a>
+                        <a href="assets/Qedirov_Zeynalabdin.pdf" target="_blank"><button class="myBtn">Download
+                                CV</button></a>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -115,23 +117,20 @@
     <!-- portfolio SECTION -->
     <section id="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="Card">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide Card">
                         <img src="./assets/images/portfolio1.png">
                         <div class="card-body">
                             <h4>My first web site</h4>
                             <hr class="dropdown-divider">
                             <p>HTML, CSS, JS istifadə olunaraq hazırladığım ilk veb saytım.</p>
                             <a href="https://zeyoni.github.io/MyFirstWebSite/" target="_blank"><button
-                                    class="myBtn">Sayta Get</button></a>
+                                    class="myBtn">Sayta
+                                    Get</button></a>
                         </div>
                     </div>
-
-                </div>
-
-                <div class="col-md-4">
-                    <div class="Card">
+                    <div class="swiper-slide Card">
                         <img src="./assets/images/portfolio2.png">
                         <div class="card-body">
                             <h4>One Page</h4>
@@ -139,12 +138,11 @@
                             <p>1 səhifəlik veb sayt.</p>
                             <a href="https://zeyoni.github.io/1Page/" target="_blank"><button class="myBtn">Sayta
                                     Get</button></a>
+
                         </div>
                     </div>
 
-                </div>
-                <div class="col-md-4">
-                    <div class="Card">
+                    <div class="swiper-slide Card">
                         <img src="./assets/images/portfolio3.png">
                         <div class="card-body">
                             <h4>Flowers</h4>
@@ -154,12 +152,17 @@
                                     Get</button></a>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
+
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
         </div>
+
     </section>
     <!-- contact SECTION -->
     <section id="contact">
@@ -247,7 +250,7 @@
     <script src="assets/js/smooth-scroll.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
-            
+
         });
     </script>
 
@@ -265,6 +268,33 @@
     </script>
 
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 20,
+                depth: 100,
+                modifier: 4,
+                slideShadows: true,
+                loop: true,
+                loopFillGroupWithBlank: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
