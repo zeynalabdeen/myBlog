@@ -36,7 +36,7 @@ body{
     width: 100%;
     margin: 0 auto;
     height: auto;
-    background: linear-gradient(to right, #fff2fd,#ffffff);
+    background: linear-gradient(135deg, #f0fdff,#ffffff);
 }
 #whatsapp{
     position: fixed;
