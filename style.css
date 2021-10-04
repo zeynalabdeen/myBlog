@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     color: #00172b;
     text-decoration: none !important;
+    scroll-behavior: smooth;
 }
 dl,ol,ul{
     padding: 0 !important;
