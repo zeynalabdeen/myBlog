@@ -284,6 +284,8 @@ nav ul li a:hover{
 #portfolio .Card img{
     position: relative;
     height: 10rem;
+    width: 100%;
+    object-fit: cover;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 1px 5px 8px 1px rgba(0, 0, 0, 0.226);
